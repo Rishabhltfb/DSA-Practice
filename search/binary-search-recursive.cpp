@@ -1,3 +1,5 @@
+// DIFFICULTY: EASY
+
 int recursiveSearch(vector<int>& nums, int low, int high, int target){
   if(low>high) return -1; // base case
     // int mid = (low+high)/2;  // have overflow issue in edge cases
