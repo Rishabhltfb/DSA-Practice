@@ -1,4 +1,5 @@
 // Link: https://bit.ly/3OmIp5d
+// DIFFICULTY: MEDIUM
 
 int searchInRotatedSortedArray(vector<int>& arr, int n, int k)
 {

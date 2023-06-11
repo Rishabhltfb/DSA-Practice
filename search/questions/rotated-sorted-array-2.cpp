@@ -1,4 +1,5 @@
 // Link: https://bit.ly/3MCdLTY
+// DIFFICULTY: MEDIUM
 
 // Edge Case: [3,3,1,3,3,3,3,3](Duplicates exists)  here you won't be able to apply binary untill you get rid of condition
 // arr[low] = arr[mid] = arr[high]

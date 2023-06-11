@@ -1,3 +1,5 @@
+// DIFFICULTY: EASY
+
 int binarySearch(vector<int>& nums, int target) {
     // Write Your Code Here
     int low = 0, high = nums.size()-1;

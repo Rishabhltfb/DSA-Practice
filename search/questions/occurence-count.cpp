@@ -1,3 +1,5 @@
+// DIFFICULTY: EASY
+
 #include <bits/stdc++.h>
 
 int count(vector<int>& arr, int n, int x) {

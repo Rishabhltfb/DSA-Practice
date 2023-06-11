@@ -1,3 +1,5 @@
+// DIFFICULTY: EASY
+
 // Upper Bound = index of smallest number > x 
 int upperBound(vector<int> &arr, int x, int n){
 	int low = 0, high = n-1;

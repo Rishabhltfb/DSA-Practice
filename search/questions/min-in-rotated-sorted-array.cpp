@@ -1,6 +1,7 @@
 // Link: https://bit.ly/41My2dR
 // Youtube: https://www.youtube.com/watch?v=nhEMDKMB44g&list=PLgUwDviBIf0pMFMWuuvDNMAkoQFi-h0ZF&index=7
 // Note: All element distinct
+// DIFFICULTY: MEDIUM
 
 int findMin(vector<int>& arr)
 {
