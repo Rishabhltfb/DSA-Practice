@@ -1,5 +1,6 @@
 // LINK: http://bit.ly/3IQQdrt
 // DIFICULTY: MEDIUM
+// NOTE: Right rotate by k = Left rotate by N-k
 
 #include <bits/stdc++.h> 
 #include <iostream>
@@ -15,7 +16,7 @@ using namespace std;
         }
     }
 
-void rotateByK(){
+void rightRotateByK(){
     int n,k;
     cin>>n;
     int arr[n];
@@ -24,6 +25,7 @@ void rotateByK(){
     }
     cin>>k;
     k = k%n;
+    k = n-k; // right rotate by k = left rotate by n-k
     reverse(arr,0,k-1);
     reverse(arr,k,n-1);
     reverse(arr,0,n-1);
@@ -35,6 +37,6 @@ void rotateByK(){
 
 int main() {
     //Write your code here
-    rotateByK();
+    rightRotateByK();
     return 0;
 }
