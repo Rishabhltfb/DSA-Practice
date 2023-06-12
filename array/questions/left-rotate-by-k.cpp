@@ -1,5 +1,5 @@
 // LINK: http://bit.ly/3IQQdrt
-// DIFICULTY: MEDIUM
+// DIFFICULTY: MEDIUM
 
 #include <bits/stdc++.h> 
 #include <iostream>

@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3XbsF6k
-// DIFICULTY: VERY EASY
+// DIFFICULTY: VERY EASY
 
 int linearSearch(int n, int num, vector<int> &arr)
 {

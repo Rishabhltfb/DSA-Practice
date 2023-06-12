@@ -1,5 +1,5 @@
 // LINK: http://bit.ly/3IQQdrt
-// DIFICULTY: MEDIUM
+// DIFFICULTY: MEDIUM
 // NOTE: Right rotate by k = Left rotate by N-k
 
 #include <bits/stdc++.h> 

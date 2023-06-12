@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3if2k8G
-// DIFICULTY: MEDIUM, CONFUSED FOR A LITTLE WHILE
+// DIFFICULTY: MEDIUM, CONFUSED FOR A LITTLE WHILE
 
 int removeDuplicates(vector<int> &arr, int n) {
 	

@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3XbsF6k
-// DIFICULTY: EASY-MEDIUM
+// DIFFICULTY: EASY-MEDIUM
 
 vector<int> moveZeros(int n, vector<int> a) {
     // Write your code here.

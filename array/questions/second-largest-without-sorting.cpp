@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3GJie4l
-// DIFICULTY: EASY
+// DIFFICULTY: EASY
 
 int getSecondLargest(int n, vector<int> a) {
     int largest = a[0];

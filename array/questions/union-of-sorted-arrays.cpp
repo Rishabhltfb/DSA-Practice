@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3IpS7Rd
-// DIFICULTY: EASY-MEDIUM
+// DIFFICULTY: EASY-MEDIUM
 
 vector < int > unionOfSortedArrays(vector < int > a, vector < int > b) {
     // Write your code here

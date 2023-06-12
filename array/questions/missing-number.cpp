@@ -1,5 +1,5 @@
 // LINK: https://bit.ly/3ZdwAkN
-// DIFICULTY: EASY
+// DIFFICULTY: EASY
 
 int missingNumber(vector<int>&a, int N) {
     // Write your code here.
