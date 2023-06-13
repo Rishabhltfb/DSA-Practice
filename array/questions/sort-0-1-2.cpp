@@ -1,5 +1,6 @@
 // LINK: https://bit.ly/3CsgYAa
 // APPROACH: OPTIMAL 
+// DIFFICULTY: MEDIUM
 // TECHNIQUE: DUTCH NATIONAL FLAG ALGO
 // TIME COMPLEXITY: O(N) , SPACE COMPLEXITY: O(1)
 // NOTE: Take extra care of which pointer to move at what time

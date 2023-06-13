@@ -1,4 +1,5 @@
 // LINK: https://bit.ly/3GmPYTH
+// DIFFICULTY: MEDIUM
 // APPROACH: OPTIMAL
 // TECHNIQUE: Moore's Voting Algo
 // TIME COMPLEXITY: O(N+N) , SPACE COMPLEXITY: O(1)
