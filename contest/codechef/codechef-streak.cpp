@@ -1,3 +1,10 @@
+// LINK: https://www.codechef.com/problems/CS2023_STK
+// DIFFICULTY: EASY
+// APPROACH: OMTIMAL
+// TECHNIQUE: Keeping Max Track
+// TIME COMPLEXITY: O(N) , SPACE COMPLEXITY: O(1)
+// NOTE: Just keep track of the max streak and reset when it breaks
+
 //...START BY DOING WHAT IS NECESSARY, THEN WHAT IS POSSIBLE AND SUDDENLY YOU ARE DOING THE IMPOSSIBLE...
 #include <iostream>
 #include <bits/stdc++.h>
