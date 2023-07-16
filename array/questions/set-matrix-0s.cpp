@@ -2,7 +2,7 @@
 // DIFFICULTY: MEDIUM
 // APPROACH: OPTIMAL
 // TECHNIQUE: Hashing 
-// TIME COMPLEXITY: O() , SPACE COMPLEXITY: O()
+// TIME COMPLEXITY: O(N^2) , SPACE COMPLEXITY: O(1)
 // NOTE: We are using 1st row and 1st column to mark 0's and then converting in the below sequence...
 // STEP1: Convert the inner matrix by taking ref from row 1, col 1;
 // STEP2: Convert row1 then because conveting col1 first will distort the 1st element matrix[0][0];
