@@ -1,5 +1,4 @@
-#include <iostream>
-// #include <bits/stdc++.h>
+#include "bits.cpp"
 
 using namespace std;
 
@@ -7,7 +6,11 @@ int main () {
 
     int x;
     cin>>x;
-    cout<<x;    
+       
+
+    stack<int> stk;
+    stk.push(x);
+    cout<<stk.top()*5;
 
     return 0;
 }
