@@ -9,7 +9,7 @@ Command to run C++ file via terminal
 -   Comparing output.txt file with ans.txt file and writing in result.txt file.
 
 ```
-    g++ -std=c++17 -o a compare.cpp && ./a
+    g++ -std=c++17 -o a ./helper/compare.cpp && ./a
 ```
 
 -   Use below shortcut keys for quick build & run.

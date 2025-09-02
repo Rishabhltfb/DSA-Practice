@@ -16,7 +16,7 @@ int main() {
     }
 
     // Declare a file object for result.txt and check if it opened successfully.
-    ofstream file3("result.txt");
+    ofstream file3("compare_result.txt");
     if (!file3) {
         cerr << "Error creating the output file." << endl;
         return 1;
@@ -58,7 +58,9 @@ int main() {
 
     // If the files are identical, print the message to result.txt
     if (identical) {
-        file3 << "The files are identical." << endl;
+        file3 << "SUCCESS: The files are identical." << endl;
+    }else{
+        file3 << "FAILURE: The files are not identical." << endl;
     }
 
     // Close the files.

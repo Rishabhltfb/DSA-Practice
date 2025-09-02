@@ -1,5 +1,5 @@
 // #include <bits/stdc++.h>
-#include "bits.cpp" 
+#include "./lib/bits.cpp" 
 using namespace std;
 
 
@@ -15,83 +15,65 @@ typedef long long ll;
 	ios::sync_with_stdio(0); \
 	cin.tie(0);
 
-bool isPresent(vector<ll> &arr, ll k){
-    ll left = 0, right = arr.size()-1;
-    while(left<= right){
-        ll mid = left + (right-left)/2;
-    }
-    return false;
+
+int lowerBound(vector<int> arr, int n, int x) {
+	// Write your code here
+	int left =0, right = n-1;
+	int lowerBound = n;
+	while(left<=right){
+		int mid = left + (right - left)/2;
+		int curr = arr[mid];
+		if(curr <= x ){
+			lowerBound = mid;
+			left =mid+1;
+		} else{
+			right = mid-1;
+		}
+	}
+	return lowerBound;
 }
 
-bool solve(){
-    ll n;
-    cin>>n;
-    vector<ll> arr(n-1);
-    ll maxi = (n*(n+1))/2;
-    bool maxCheck = true;
-    for(int i=0;i<n-1;i++){
-        cin>>arr[i];
-        if(arr[i] > maxi) {
-            maxCheck = false;
-        }
-    }
-    if(!maxCheck){
-        return false;
-    }
-    if(n>2){
-        map<ll,ll> mp;
-        ll x = -1;
-        ll sum = maxi;
-        for(int i=0;i<n-2;i++){
-            ll diff = arr[i+1] - arr[i];
-            sum -= diff;
-            if(n >= diff ){
-                if(mp[diff]>0){
-                    if(x!=-1) return false;
-                    x= diff;
-                }else{
-                    mp[diff]++;
-                }
-            }else{
-                if(x!=-1) return false;
-                x = diff;
-            }
-        }
-        if(x!=-1 && mp[arr[0]]!=0 ){
-            return false;   
-        }else if(x == -1 && mp[arr[0]!=0]){
-            x= arr[0];
-        }else if(x != -1 && mp[arr[0]] == 0){
-            mp[arr[0]]++;
-        }else if(x==-1 && mp[arr[0]==0]){
-            mp[arr[0]]++;
-        }
-        else{
-            x = sum;
-        }
-        ll counter = 0;
-        for(int i =1 ; i<= n;i++){
-            if(mp[i]>1){
-                return false;
-            }else if(mp[i]==0 && x!=-1){
-                if(x-i<1 || x-i>n || mp[x-i]!= 0) return false;
-            }else{
-                counter++;
-            }
-        }
-        if(counter<n-2 && counter>n-1) return false; 
-    }
-    return true;
+int upperBound(vector<int> &arr,  int n,int x){
+	// Write your code here.	
+	int left =0, right = n-1;
+	int upperBound = n;
+	while(left<=right){
+		int mid = left + (right - left)/2;
+		int curr = arr[mid];
+		if(curr <= x){
+			left = mid+1;
+		}else{
+			upperBound = mid;
+			right = mid -1;
+		}
+	}
+	return upperBound;
+}
+
+pair<int, int> firstAndLastPosition(vector<int>& arr, int n, int k)
+{
+    // Write your code here
+    int lbIndex = lowerBound(arr,n,k);
+    int ubIndex = upperBound(arr,n,k);
+    cout<<lbIndex<<"\t"<<ubIndex<<"\n";
+    if(ubIndex - lbIndex == 1 ) return {-1,-1};
+
+    return {lbIndex, ubIndex-1};
 }
 
 int main() {
 	fast_io;
     ll t =1;
-    cin>>t;
+    // cin>>t;
+    // clock_t start, end;
+    // start = clock();
+    vector<int> arr = {1,3,3,5};
     while(t--){
-        bool ans = solve();
-        if(ans) cout<<"YES\n";
-        else cout<<"NO\n";
+        firstAndLastPosition(arr, 4,2);
     }
+    // end = clock();
+    // double time_taken = (double)(end - start) / CLOCKS_PER_SEC;
+    // cout << "\nTime taken by the program is: " << time_taken << " seconds" << endl;
     return 0;
 }
+

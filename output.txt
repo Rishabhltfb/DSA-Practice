@@ -1,3 +1,5 @@
-YES
-NO
-YE
+abcd
+cdab
+false
+
+Time taken by the program is: 0.061 ms
